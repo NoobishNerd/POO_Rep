@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="red">Saudações</h1>
+    <p id="p1">Olá Mundo</p>
+    <p id="p2" class="red">Olá Portugal</p>
+    <p id="p3">Olá Vila do Conde</p>
+    <div>Olha uma div</div>
+    <div>Olha uma segunda div com um
+    <span>primeiro span</span>
+    </div>
+    <span>Olha um segundo span</span>
+
+
+    <script> 
+
+//ex 1
+    const IDp2 = document.getElementById("p2").innerHTML
+    console.log(IDp2)
+
+//ex 2
+    const EXERCICIO2 = document.querySelectorAll("p","div");
+    for (let index = 0; index < EXERCICIO2.length; index++) {
+
+        console.log(EXERCICIO2[index]);
+    }
+
+//ex 3
+    for (let index = 0; index < EXERCICIO2.length; index++) {
+
+        console.log(EXERCICIO2[index].innerHTML);
+    }
+
+//ex 4
+    const PARAGRAPHS = document.getElementsByTagName("p")
+
+    for (let index = 0; index < PARAGRAPHS.length; index++) {
+
+        console.log(PARAGRAPHS[index].innerHTML);
+    }
+
+//ex 5
+    const RED = document.getElementsByTagName("red")
+
+//ex 6
+     
+    for (let index = 0; index < PARAGRAPHS.length; index++) {
+        if(PARAGRAPHS[index].id == "p3"){
+            console.log(PARAGRAPHS[index].innerHTML);
+        }
+    }
+
+//ex 7
+
+    const SPANS = document.getElementsByTagName("span")
+
+    for (let index = 0; index < PARAGRAPHS.length; index++) {
+
+        console.log(SPANS[index]);
+    }
+
+    </script>
+</body>
+</html>
