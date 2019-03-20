@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ex 1
+        const grades = [
+        {
+            name: 'Rui',
+            grade: 8
+        },
+        {
+            name: 'Ana',
+            grade: 12
+        },
+        {
+            name: 'Carla',
+            grade: 14
+        }]
+
+
+        //ex 2
+
+        function addNewObject() {
+            const name = prompt("Nome:")
+            const grade = prompt("Nota:")
+
+        /*
+            const newObject = {
+                name: name,
+                grade: grade
+            }
+
+        alternativa
+        */
+
+        const newObj = {name, grade}
+
+        grades[grades.length] = newObj
+        }
+
+        //ex 3
+
+        function calcGradesAverage(){
+            let sum = 0
+
+            for (const ojct of grades) {
+              sum += Number(obj.grade)
+            }
+            let average = sum/grades.length
+            console.log(average)
+        }
+
+
+        addNewObject()
+        console.table(grades)
+        calcGradesAverage()
+
+    </script>
+</body>
+</html>
