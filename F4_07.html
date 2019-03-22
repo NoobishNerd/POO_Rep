@@ -10,7 +10,7 @@
     <form>
 
         Titulo <br>
-        <input type="text" placeholder="Titulo do filme"> <br>
+        <input type="text" placeholder="Titulo do filme" required> <br>
         Genre <br>
         <select required>
             <option value="aventura">abentura</option>
@@ -55,8 +55,9 @@
         tr2.appendChild(td2)
         table.appendChild(tr1)
         table.appendChild(tr2)
-        let body = document.body.innerHTML
+        document.body.innerHTML.appendChild(table)
     
+        
 
 
     </script>
