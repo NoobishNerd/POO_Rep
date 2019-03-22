@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .body{
+            align-content: center
+        }
+        .Show{
+            align-self: auto;
+        }
+
+        .Hide{
+            display: none
+        }
+    </style>
+
+
+
+    <input type="search" id="searchBase" placeholder="Search thingy nombre">
+
+<div>
+        <img class="Show" src="cringe.jpg" alt="cringe">
+        <img class="Show" src="koala.jpg" alt="koala">
+        <img class="Show" src="kurotsunoF.png" alt="kurotsun">
+        <img class="Show" src="merda.jpg" alt="merda">
+        <img class="Show" src="ojantar.jpeg" alt="janta">
+</div>
+
+
+
+    <script>
+    
+    const AllSearchables = document.querySelectorAll("img")
+
+    document.getElementById("searchBase").addEventListener("search", searchHideShow());
+    
+    function searchHideShow(){
+
+    let searchTxt = document.getElementById("searchBase").textContent()
+    console.log(searchTxt)
+
+    for (let index = 0; index < AllSearchables.length; index++) {
+        if(AllSearchables[index].id.includes() ){
+            AllSearchables[index].className = "Show";
+        }else{
+            AllSearchables[index].className = "Hide";
+        }    
+    }
+    }
+
+    </script>
+
+</body>
+</html>

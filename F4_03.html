@@ -56,6 +56,17 @@
             console.log(average)
         }
 
+        //ex 4
+
+        function showPositiveGrades() {
+            let result = ""
+            for (let notas of grades) {
+                if(notas.grades >=10){
+                    result += `${notas.name} \n`
+                }
+            }
+        }
+
 
         addNewObject()
         console.table(grades)
