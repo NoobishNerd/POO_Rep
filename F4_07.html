@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        Titulo <br>
+        <input type="text" placeholder="Titulo do filme"> <br>
+        Genre <br>
+        <select required>
+            <option value="aventura">abentura</option>
+            <option value="acao">axão</option>
+            <option value="comedia">comic sans</option>
+            <option value="terro">terrivel</option>
+            <option value="romance">romã</option>
+            <option value="thriller">triler náite</option>
+            <option value="outro">gender fluid</option>
+        </select> <br>
+        Ano <br>
+        <input type="number" min="1900" required max="2019"> <br>
+        Kappa <br>
+        <input type="url" required> <br>
+        Trailer <br>
+        <input type="url"> <br> <br>
+        <button type="submit">gay submit</button>
+        <button type="reset">straight reset</button>
+
+
+    </form>
+
+    <script>
+        
+        const a1 = document.createElement("table");
+        document.body.appendChild(a1);
+        const a2 = document.createElement("tr");
+        a1.appendChild(a2);
+        const a3 = document.createElement("th");
+        a2.appendChild(a3);
+        const text1 = document.createTextNode("Titulo");
+        a3.appendChild(text1);
+        const a4 = document.createElement("th");
+        a2.appendChild(a4);
+        const text2 = document.createTextNode("Género");
+        a4.appendChild(text2);
+        const text2 = document.createTextNode("Opções");
+
+        document.body.appendChild(a1)
+    </script>
+    
+</body>
+</html>
