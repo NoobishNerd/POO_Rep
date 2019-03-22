@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //ex 1
+    function isEmpty(obj){
+        for (const key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                return false
+                
+            }  
+        }
+        return true
+    }
+
+    let schedule = {}
+    alert( isEmpty(schedule))  //true
+    schedule["8:30"] = "GTFU"
+    alert( isEmpty(schedule)) // false
+
+
+    //05
+
+    //ex 1
+    const salaries = {
+        John: 100,
+        Ann: 160,
+        Pete: 130
+    }
+
+calcAllSalaries()
+
+function calcAllSalaries(){
+    let sum = 0;
+    for (let key in salaries) {
+        if (salaries.hasOwnProperty(key)) {
+            sum += salaries[key];
+            
+        }
+    }
+    console.log(sum)
+}
+
+    
+    </script>
+
+</body>
+</html>
