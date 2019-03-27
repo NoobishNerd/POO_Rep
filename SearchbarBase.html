@@ -46,7 +46,7 @@
     console.log(searchTxt)
 
     for (let index = 0; index < AllSearchables.length; index++) {
-        if(AllSearchables[index].id.includes() ){
+        if(AllSearchables[index].id.includes(searchTxt)){
             AllSearchables[index].className = "Show";
         }else{
             AllSearchables[index].className = "Hide";
